@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1>💱 Конвертер валют</h1>
+
+<div class="converter">
+    <input
+            type="number"
+            id="amount"
+            placeholder="Введіть суму"
+            min="0"
+            step="0.01"
+    />
+
+    <div class="currency-row">
+        <select id="fromCurrency">
+            <option value="">Оберіть валюту...</option>
+        </select>
+        <span class="arrow">→</span>
+        <select id="toCurrency">
+            <option value="">Оберіть валюту...</option>
+        </select>
+    </div>
+
+    <button id="convertBtn">Конвертувати</button>
+
+    <div id="result"></div>
+</div>
+
+<h2>📊 Історія конвертацій</h2>
+<ul id="history"></ul>
+
+<script src="renderer.js"></script>
+</body>
+</html>
